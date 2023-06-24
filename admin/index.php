@@ -1,8 +1,13 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the following stylesheet has the icons in the login signup form form_container -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="style.css">
     <!-- style for the main index.php can also be used -->
     <link rel="stylesheet" href="../style.css">
@@ -28,9 +33,6 @@
             <?php
             }
             ?>
-            <div>
-                <button class="button apply-button">APPLY</button>
-            </div>
         </div>
     </section>
 
@@ -59,7 +61,7 @@
                         <i class="uil uil-lock password"></i>
                         <i class="uil uil-eye-slash pw_hide"></i>
                     </div>
-                    <button class="button">LOGIN NOW</button>
+                    <button name="submit" class="button">LOGIN NOW</button>
                 </form>
             </div>
         </div>
